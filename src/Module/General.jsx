@@ -1,6 +1,7 @@
 import hackathonLogo from "./Assets/logo_coloured.png";
 import rcLogo from "./Assets/rc_logo.png";
 import tcLogo from "./Assets/technovate.png";
+import rcAboutLogo from "./Assets/rcabout.jpg";
 // Importing all sponsors logos from Assets
 /** Put all your Team member image inside folder `Team Images`
  * and import them like in the above and update src in TeamInfo
@@ -68,7 +69,12 @@ const MIDDLE_SECTION = {
     "Welcome to Technovate, where we turn caffeine into code and creativity into solutions. Our logo represents our core values: Innovate, Iterate, Inspire. We're not your average hackathon; we hack for good and make a positive impact. With a team of tech enthusiasts and dreamers, we gather bright minds, wild ideas, and strong coffee to tackle social challenges head-on. Join us for a weekend of coding frenzy, discussions, and the chance to shape a better future. Technovate: Where innovation meets social change. Let's hack away at challenges and build a world where technology drives positive transformation.",
   LOGO: hackathonLogo,
 };
-
+const RC = {
+  TITLE: "About Rotaract",
+  LONG_DESCRIPTION:
+    "Rotaract District 3141 of the Mumbai region, is a partner of the Rotary District 3141 and focuses on projects and initiatives under avenues like community service, professional development, international service, entrepreneurship development, and sports. It also desires to bring about necessary changes and awareness about various issues affecting our community & help our society in realizing the virtues of humanity & compassion through willful & selfless service. Rotaract District 3141, has been one of the most active and impactful Rotaract districts around the world, with many laurels & recognitions in various fields honouring it.",
+  LOGO: rcAboutLogo,
+};
 const FOOTER = {
   VOLUNTEERING_FORM: {
     required: true,
@@ -425,4 +431,5 @@ export {
   schedule,
   calenderStartingDate,
   aboutData,
+  RC,
 };

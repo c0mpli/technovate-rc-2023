@@ -13,6 +13,10 @@
   padding: 0;
   position: absolute;
 }
+.rcaboutLogo {
+  transform: scale(2) !important;
+  margin-top: 4rem !important;
+}
 
 .LogoSectionAbout {
   text-align: left;
