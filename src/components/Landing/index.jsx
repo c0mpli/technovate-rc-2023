@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { SOCIALS, TOP_SECTION } from "../../Module/General";
 import MytypedComponent from "../Typed/index.js";
 import "./style.css";
@@ -15,10 +16,28 @@ const Btn = (props) => {
 };
 
 const About = () => {
+  const devfolioRef = useRef();
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    const dev = devfolioRef.current;
+    dev.appendChild(script);
+    return () => {
+      dev.removeChild(script);
+    };
+  }, []);
   return (
-    <div className="AboutMe">
+    <div className="AboutMe" id="devfolio" ref={devfolioRef}>
       <MytypedComponent />
-      <h2>{TOP_SECTION.TITLE}</h2>
+      <h2 style={{ marginBottom: "30px" }}>{TOP_SECTION.TITLE}</h2>
+      <div
+        class="apply-button"
+        data-hackathon-slug="technovate.devfolio.co"
+        data-button-theme="light"
+        style={{ height: "44px", width: "312px", cursor: "pointer" }}
+      ></div>
     </div>
   );
 };
