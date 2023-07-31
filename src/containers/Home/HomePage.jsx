@@ -32,14 +32,31 @@ import pattern from "./assets/pattern4.png";
 
 const SponsorGroup = (props, index) => {
   return (
-    <Row key={index}>
-      {props.map((s, i) => (
-        <Col key={i} className="" sm={12} lg={4} md={6}>
-          {" "}
-          <Sponsor srcx={s.src} />{" "}
-        </Col>
-      ))}
-    </Row>
+    <>
+      {props.title && (
+        <h2>
+          <span style={{ color: "#0c7ee1" }}>[</span>
+          {props.title}
+          <span style={{ color: "#0c7ee1" }}>]</span>
+        </h2>
+      )}
+      <Row
+        key={index}
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexWrap: "wrap",
+        }}
+      >
+        {props.images.map((s, i) => (
+          <Col key={i} className="" sm={12} lg={4} md={6}>
+            {" "}
+            <Sponsor srcx={s.src} />{" "}
+          </Col>
+        ))}
+      </Row>
+    </>
   );
 };
 
@@ -172,11 +189,11 @@ export default function HomePage() {
 
         {/* ********Sponsors here ***** */}
 
-        {/* <Row className="sponsorSection" id="sponsors">
+        <Row className="sponsorSection" id="sponsors">
           <SponsorsHead />
-          <SponsorUS />
+          {/* <SponsorUS /> */}
           {sponsorLogos.map(SponsorGroup)}
-        </Row> */}
+        </Row>
         {/* ********Sponsors ending here ***** */}
 
         {media && <Birds top="120vh" left="0vh" type="" />}

@@ -15,20 +15,12 @@ import first from "./Assets/gold.png";
 import second from "./Assets/silver2.png";
 import third from "./Assets/third.png";
 import boy from "./Assets/boy.png";
-import pass from "./Assets/sponsorsLogos/1pass.png";
-import ACF from "./Assets/sponsorsLogos/ACF.png";
-import cfc from "./Assets/sponsorsLogos/cfc.png";
-import echoAR from "./Assets/sponsorsLogos/echoAR.png";
-import egg from "./Assets/sponsorsLogos/egg.png";
-import glimpse from "./Assets/sponsorsLogos/glimpse.png";
-import interviewC from "./Assets/sponsorsLogos/interview-cake.jpg";
-import ll from "./Assets/sponsorsLogos/ll.png";
-import qoom from "./Assets/sponsorsLogos/qoom.svg";
 import Replit from "./Assets/sponsorsLogos/replit.png";
-import sublime from "./Assets/sponsorsLogos/sublime.png";
-import taskade from "./Assets/sponsorsLogos/taskade.png";
-import lyin from "./Assets/teami/lyin.jpg";
-
+import devfolio from "./Assets/sponsorsLogos/devfolio.png";
+import polygon from "./Assets/sponsorsLogos/polygon.png";
+import solana from "./Assets/sponsorsLogos/solana.png";
+import filecoin from "./Assets/sponsorsLogos/filecoin.png";
+import techthree from "./Assets/sponsorsLogos/techthree.png";
 /** Put all your sponsors logo inside folder `sponsorLogos`
  * and import them in the above and update `src` in sponsorLogos
  * or you can provide a cloud link in src
@@ -298,7 +290,7 @@ const TeamInfo = [
       role: "Organizer",
       github: "",
       linkedin: "",
-      img: Ryah,
+      img: "",
     },
   ],
   [
@@ -308,14 +300,14 @@ const TeamInfo = [
       role: "Organizer",
       github: "",
       linkedin: "",
-      img: lyin,
+      img: "",
     },
     {
       Name: "Zoheb",
       role: "Organizer",
       github: "",
       linkedin: "",
-      img: zoha,
+      img: "",
     },
   ],
 ];
@@ -352,7 +344,7 @@ const JudgesInfo = [
       role: "Organizer",
       github: "",
       linkedin: "",
-      img: lyin,
+      img: "",
     },
     {
       Name: "Zoheb",
@@ -371,10 +363,9 @@ const JudgesInfo = [
  */
 
 const sponsorLogos = [
-  [{ src: cfc }, { src: sublime }, { src: echoAR }], //Array 1
-  [{ src: taskade }, { src: Replit }, { src: qoom }], //Array 2
-  [{ src: interviewC }, { src: pass }, { src: glimpse }], //Array 3
-  [{ src: egg }, { src: ll }, { src: ACF }], //Array 4
+  { title: " Gold sponsors ", images: [{ src: devfolio }, { src: polygon }] }, //Array 1
+  { title: " Silver sponsors ", images: [{ src: filecoin }, { src: solana }] }, //Array 1
+  { images: [{ src: Replit }, { src: techthree }] }, //Array 1
 ];
 
 /** Instructions
