@@ -52,7 +52,7 @@ const SponsorGroup = (props, index) => {
         {props.images.map((s, i) => (
           <Col key={i} className="" sm={12} lg={4} md={6}>
             {" "}
-            <Sponsor srcx={s.src} />{" "}
+            <Sponsor srcx={s.src} alt={s.alt} link={s.link} />{" "}
           </Col>
         ))}
       </Row>

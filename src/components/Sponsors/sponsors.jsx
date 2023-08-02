@@ -1,6 +1,6 @@
-import {SOCIALS} from '../../Module/General';
-import {Btn} from '../Landing/index.jsx';
-import './sponsors.scss';
+import { SOCIALS } from "../../Module/General";
+import { Btn } from "../Landing/index.jsx";
+import "./sponsors.scss";
 
 function SponsorsHead() {
   return <h1 className="shead">Sponsors & Partners</h1>;
@@ -8,9 +8,11 @@ function SponsorsHead() {
 
 function Sponsor(props) {
   return (
-    <div className="Sponsor ">
-      <img src={props.srcx} alt="Limbo hacks"></img>
-    </div>
+    <a href={props.link} target="__blank">
+      <div className="Sponsor ">
+        <img src={props.srcx} alt={props.alt}></img>
+      </div>
+    </a>
   );
 }
 
@@ -20,9 +22,9 @@ function SponsorUS() {
       <h3>Interested in Sponsoring </h3>
       <a href={SOCIALS.email}>
         <Btn className="sponsor_btn" type="Sponsor us" overlay="Send a mail" />
-      </a>{' '}
+      </a>{" "}
     </div>
   );
 }
 
-export {SponsorsHead, Sponsor, SponsorUS};
+export { SponsorsHead, Sponsor, SponsorUS };
