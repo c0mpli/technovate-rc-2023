@@ -363,9 +363,34 @@ const JudgesInfo = [
  */
 
 const sponsorLogos = [
-  { title: " Gold sponsors ", images: [{ src: devfolio }, { src: polygon }] }, //Array 1
-  { title: " Silver sponsors ", images: [{ src: filecoin }, { src: solana }] }, //Array 1
-  { images: [{ src: Replit }, { src: techthree }] }, //Array 1
+  {
+    title: " Gold sponsors ",
+    images: [
+      { src: devfolio, alt: "DEVFOLIO LOGO", link: "https://devfolio.co" },
+      {
+        src: polygon,
+        alt: "POLYGON LOGO",
+        link: "https://polygon.technology/",
+      },
+    ],
+  }, //Array 1
+  {
+    title: " Silver sponsors ",
+    images: [
+      { src: filecoin, alt: "FILECOIN LOGO", link: "https://filecoin.io" },
+      { src: solana, alt: "SOLANA LOGO", link: "https://solana.com" },
+    ],
+  }, //Array 1
+  {
+    images: [
+      { src: Replit, alt: "REPLIT LOGO", link: "https://replit.com" },
+      {
+        src: techthree,
+        alt: "TECHTHREE LOGO",
+        link: "https://techthree.vercel.app",
+      },
+    ],
+  }, //Array 1
 ];
 
 /** Instructions
