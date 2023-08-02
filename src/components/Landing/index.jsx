@@ -34,7 +34,7 @@ const About = () => {
       <h2 style={{ marginBottom: "30px" }}>{TOP_SECTION.TITLE}</h2>
       <div
         class="apply-button"
-        data-hackathon-slug="TECHNOVATE"
+        data-hackathon-slug="technovate"
         data-button-theme="light"
         style={{ height: "44px", width: "312px", cursor: "pointer" }}
       ></div>
