@@ -2,6 +2,7 @@ import hackathonLogo from "./Assets/logo_coloured.png";
 import rcLogo from "./Assets/rc_logo.png";
 import tcLogo from "./Assets/technovate.png";
 import rcAboutLogo from "./Assets/rcabout.jpg";
+
 // Importing all sponsors logos from Assets
 /** Put all your Team member image inside folder `Team Images`
  * and import them like in the above and update src in TeamInfo
@@ -21,6 +22,7 @@ import polygon from "./Assets/sponsorsLogos/polygon.png";
 import solana from "./Assets/sponsorsLogos/solana.png";
 import filecoin from "./Assets/sponsorsLogos/filecoin.png";
 import techthree from "./Assets/sponsorsLogos/techthree.png";
+import ara from "./Assets/sponsorsLogos/Aara.png";
 /** Put all your sponsors logo inside folder `sponsorLogos`
  * and import them in the above and update `src` in sponsorLogos
  * or you can provide a cloud link in src
@@ -390,6 +392,9 @@ const sponsorLogos = [
         link: "https://techthree.vercel.app",
       },
     ],
+  },
+  {
+    images: [{ src: ara, alt: "AARA LOGO", link: "" }],
   }, //Array 1
 ];
 

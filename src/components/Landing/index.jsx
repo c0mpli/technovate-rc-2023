@@ -45,7 +45,13 @@ const About = () => {
 const Myinfo = () => {
   return (
     <div className="Myinfo">
-      <img src={TOP_SECTION.IMAGE} alt="myimage" />
+      <img
+        src={TOP_SECTION.IMAGE}
+        alt="myimage"
+        onClick={() => {
+          window.open("https://technovate.devfolio.co", "_blank");
+        }}
+      />
       <About />
       {/* <p> {TOP_SECTION.SHORT_DESCRIPTION}</p> */}
       {/* <div className="join_dis">
