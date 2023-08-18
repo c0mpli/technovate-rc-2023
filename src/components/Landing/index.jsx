@@ -32,6 +32,9 @@ const About = () => {
     <div className="AboutMe" id="devfolio" ref={devfolioRef}>
       <MytypedComponent />
       <h2 style={{ marginBottom: "30px" }}>{TOP_SECTION.TITLE}</h2>
+      <h2 style={{ marginBottom: "30px" }}>
+        {"Sardar Patel Institute of Technology, Mumbai"}
+      </h2>
       <div
         class="apply-button"
         data-hackathon-slug="technovate"
