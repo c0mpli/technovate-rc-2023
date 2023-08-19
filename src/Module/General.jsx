@@ -416,7 +416,7 @@ const frequentlyAskedQuestions = [
       },
       {
         label: "How can I apply?",
-        content: `The registration would be simply done by just clicking the register button and filling up the Devfolio form in which you would have to mention you and your team details. Registrations end on 20th January 2023`,
+        content: `The registration would be simply done by just clicking the register button and filling up the Devfolio form in which you would have to mention you and your team details. Registrations end on 8th September 2023`,
       },
     ],
     [
