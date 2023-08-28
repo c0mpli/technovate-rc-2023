@@ -23,6 +23,7 @@ import solana from "./Assets/sponsorsLogos/solana.png";
 import filecoin from "./Assets/sponsorsLogos/filecoin.png";
 import techthree from "./Assets/sponsorsLogos/techthree.png";
 import ara from "./Assets/sponsorsLogos/Aara.png";
+import verbwire from "./Assets/sponsorsLogos/verbwire.png";
 /** Put all your sponsors logo inside folder `sponsorLogos`
  * and import them in the above and update `src` in sponsorLogos
  * or you can provide a cloud link in src
@@ -386,16 +387,24 @@ const sponsorLogos = [
   {
     images: [
       { src: Replit, alt: "REPLIT LOGO", link: "https://replit.com" },
+      { src: ara, alt: "AARA LOGO", link: "" },
+    ],
+  },
+  {
+    title: " Partners ",
+    images: [
       {
         src: techthree,
         alt: "TECHTHREE LOGO",
         link: "https://techthree.vercel.app",
       },
+      {
+        src: verbwire,
+        alt: "VERBWIRE LOGO",
+        link: "https://www.verbwire.com/",
+      },
     ],
   },
-  {
-    images: [{ src: ara, alt: "AARA LOGO", link: "" }],
-  }, //Array 1
 ];
 
 /** Instructions
@@ -418,6 +427,11 @@ const frequentlyAskedQuestions = [
         label: "How can I apply?",
         content: `The registration would be simply done by just clicking the register button and filling up the Devfolio form in which you would have to mention you and your team details. Registrations end on 20th January 2023`,
       },
+      {
+        label: "If the domain is social cause, what technologies can I use?",
+        content:
+          "The hackathon's theme is social cause, but there will be problem statements from webapp, ai/ml, and blockchain domains, so you can pick your favourite and ace the hackathon.",
+      },
     ],
     [
       {
@@ -434,6 +448,11 @@ const frequentlyAskedQuestions = [
         label: "Can we apply as a team?",
         content:
           "Yes! We believe that you’re stronger as a team than apart. You can form teams of 2-4 people. Most teams aim to have a mix of people with both design and development skills.",
+      },
+      {
+        label: "Is this an ideation hackathon?",
+        content:
+          "No, problem statements will be released 12 hours before the start of the hackathon and you can choose the problem statement you wish to build a solution for.",
       },
     ],
   ],
