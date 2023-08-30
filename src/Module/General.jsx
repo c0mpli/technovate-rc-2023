@@ -25,7 +25,7 @@ import techthree from "./Assets/sponsorsLogos/techthree.png";
 import ara from "./Assets/sponsorsLogos/Aara.png";
 import verbwire from "./Assets/sponsorsLogos/verbwire.png";
 import quine from "./Assets/sponsorsLogos/quine.svg";
-import googledev from "./Assets/sponsorsLogos/google.png";
+import googledev from "./Assets/sponsorsLogos/google2.png";
 /** Put all your sponsors logo inside folder `sponsorLogos`
  * and import them in the above and update `src` in sponsorLogos
  * or you can provide a cloud link in src
