@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { SOCIALS, TOP_SECTION } from "../../Module/General";
 import MytypedComponent from "../Typed/index.js";
 import "./style.css";
+import googled from "../../Module/Assets/sponsorsLogos/google2.png";
 
 const Btn = (props) => {
   return (
@@ -30,6 +31,10 @@ const About = () => {
   }, []);
   return (
     <div className="AboutMe" id="devfolio" ref={devfolioRef}>
+      <div className="poweredWrapper">
+        <h5 style={{ margin: "10px auto" }}>Powered by Gen AI Partner</h5>
+        <img src={googled} style={{ height: "50px" }} />
+      </div>
       <MytypedComponent />
       <h2 style={{ marginBottom: "30px" }}>{TOP_SECTION.TITLE}</h2>
       <h2 style={{ marginBottom: "30px" }}>
@@ -51,10 +56,12 @@ const Myinfo = () => {
       <img
         src={TOP_SECTION.IMAGE}
         alt="myimage"
+        className="hero-img"
         onClick={() => {
           window.open("https://technovate.devfolio.co", "_blank");
         }}
       />
+
       <About />
       {/* <p> {TOP_SECTION.SHORT_DESCRIPTION}</p> */}
       {/* <div className="join_dis">

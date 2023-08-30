@@ -24,6 +24,8 @@ import filecoin from "./Assets/sponsorsLogos/filecoin.png";
 import techthree from "./Assets/sponsorsLogos/techthree.png";
 import ara from "./Assets/sponsorsLogos/Aara.png";
 import verbwire from "./Assets/sponsorsLogos/verbwire.png";
+import quine from "./Assets/sponsorsLogos/quine.svg";
+import googledev from "./Assets/sponsorsLogos/google.png";
 /** Put all your sponsors logo inside folder `sponsorLogos`
  * and import them in the above and update `src` in sponsorLogos
  * or you can provide a cloud link in src
@@ -367,6 +369,16 @@ const JudgesInfo = [
 
 const sponsorLogos = [
   {
+    title: " Powered by ",
+    images: [
+      {
+        src: googledev,
+        alt: "GOOGLE DEV LOGO",
+        link: "https://developers.google.com/",
+      },
+    ],
+  },
+  {
     title: " Gold sponsors ",
     images: [
       { src: devfolio, alt: "DEVFOLIO LOGO", link: "https://devfolio.co" },
@@ -374,6 +386,16 @@ const sponsorLogos = [
         src: polygon,
         alt: "POLYGON LOGO",
         link: "https://polygon.technology/",
+      },
+      {
+        src: polygon,
+        alt: "POLYGON LOGO",
+        link: "https://polygon.technology/",
+      },
+      {
+        src: quine,
+        alt: "QUINE LOGO",
+        link: "https://quine.sh/",
       },
     ],
   }, //Array 1

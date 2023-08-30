@@ -68,7 +68,7 @@ p {
 .Myinfo {
   text-align: center;
 }
-.Myinfo img {
+.hero-img {
   width: 75rem;
   height: 75rem;
   margin-top: -10rem;
@@ -130,6 +130,11 @@ button:hover .overlay {
   left: 0;
 }
 
+.poweredWrapper {
+  transform: scale(1.4);
+  margin-bottom: 10px;
+}
+
 @media (max-width: 1200px) {
   .AboutMe h2 {
     /* font-size: 6rem; */
@@ -144,6 +149,9 @@ button:hover .overlay {
   }
   .AboutMe h2 {
     font-size: 4rem;
+  }
+  .poweredWrapper {
+    transform: scale(1);
   }
   .register {
     margin-left: 0;
@@ -161,7 +169,7 @@ button:hover .overlay {
     text-align: center;
     margin-top: -10rem;
   }
-  .Myinfo img {
+  .hero-img {
     width: 35rem;
     height: 35rem;
   }
